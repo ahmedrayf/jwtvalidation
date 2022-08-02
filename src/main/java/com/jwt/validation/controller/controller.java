@@ -55,8 +55,4 @@ public class controller {
         jwtRepository.deleteById(id);
     }
 
-    @DeleteMapping("/deleteBy/{token}")
-    public void deleteByToken(@PathVariable String token){
-        jwtRepository.deleteByToken(token);
-    }
 }

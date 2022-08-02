@@ -12,6 +12,5 @@ import java.util.Optional;
 public interface JWTRepository extends CrudRepository<JWT,String> {
     JWT findByToken(String token);
     List<JWT> findByUserName(String userName);
-    void deleteByToken(String token);
 
 }
